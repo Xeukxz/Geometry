@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  position:absolute;
+}
+
+body {
+  --widthAndHeight: 500px;
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+
+div {
+  width: 200px;
+}
+
+canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 200px; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin: 5px;
+  border-radius: 0.3em;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 35px; /* Slider handle height */
+  border-radius: 0.3em;
+  background: #494949; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
