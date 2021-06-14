@@ -4,15 +4,19 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="index.js"></script>
+  <script src="shapes.js"></script>
+  <script src="circle.js"></script>
+  <script src="rectangle.js"></script>
 </head>
 
 <body>
   <canvas id="myCanvas"></canvas>
-  <div id="nodeCountTextBox" style="width: max-content">
-    <p style="width: max-content">Node Count:<span id="nodeCount"> 3</span></p>
-  </div><br>
+  <div id="circlePrefferenceBox" class="prefferenceBox">
+    <p style="width: max-content">Node Count:<span id="nodeCount" style="margin-left: 5px;"> 3</span></p><br>
     <input type="range" min="1" max="100" value="3" class="slider" id="nodeSlider">
+    <p>Show Nodes: <input type="checkbox" class="checkBox" id="showNodes" checked="true"></p>
+  </div>
+
 </body>
 
 </html>
