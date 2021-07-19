@@ -13,6 +13,10 @@ div {
   width: 200px;
 }
 
+p {
+  position: relative;
+}
+
 canvas {
   position: absolute;
   top: 0px;
@@ -20,6 +24,7 @@ canvas {
 }
 
 .prefferenceBox {
+  position: relative;
   margin: 10px;
 }
 
